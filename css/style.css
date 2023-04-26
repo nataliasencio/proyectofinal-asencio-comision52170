@@ -1,0 +1,235 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* estilos generales*/
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin: 10px;
+}
+
+h2{
+    text-align: center;
+}
+body{
+    background-color: #BEE0F1;
+}
+
+footer {
+   padding: 20px;
+    text-align: center;
+}
+
+/* estilos del header */
+header nav .fondo-menu:hover{
+    background-color: whitesmoke;
+}
+
+/*estilos para pantallas pequeñas */
+
+/* estilos del index */
+
+main.contenedor{
+    background-image: url(../img/img-uno.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ main.contenedor{
+ 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    margin: 1rem 1rem 1rem 1rem;
+ }
+
+ main div.contenedor-dos{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+ }
+
+ /* estilos sobre nosotros */
+ 
+ main.nosotros{
+ display: grid;
+ grid-template-columns: repeat(1, 1fr);
+ grid-template-rows: repeat(1, 1fr);
+ margin: 1rem;
+ justify-items: center;
+ align-items: center;
+ text-align: center;
+ gap: 3rem;
+ }
+
+main div.titulo-sobrenosotros{
+    grid-column: span 1;
+}
+
+main div.profesional-odontologa{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+main div.tecnica-estetica{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+/* estilos tratamientos */
+main.tratamientos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+/* estilo de html contacto */
+.form {
+    padding: 50px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.maps{
+    margin-top: 70px;
+    margin-bottom: 30px;
+   text-align: center;
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* estilos de html promociones */
+main.promos{
+   display: grid;
+   grid-template-columns: repeat(1,1fr);
+   grid-template-rows: repeat(1,1fr);
+   justify-items: center;
+   align-items: center;
+   gap: 2rem;
+  margin: 2rem;
+}
+
+/* estilos html tratamientos*/
+
+
+/* mq de tablets 600px para arriba */
+@media  screen and (min-width:600px){
+    /* estilos del index */
+    main.contenedor{
+ 
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+     }
+    
+     /* estilos sobre nosotros */
+     main.nosotros{
+         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin: 1rem;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        }
+        main div.titulo-sobrenosotros{
+            grid-column: span 2;
+        }
+        main div.profesional-odontologa{
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+        
+        main div.tecnica-estetica{
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+
+        /* estilos tratamientos */
+        main.tratamientos{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            justify-items: center;
+            align-items: center;
+            text-align: center;
+            
+        }
+
+     main div.titulo-tratamientos{
+        grid-column: span 2;
+        grid-row: span 1;
+     }
+
+     main div.tratamientos-odontologicos{
+        grid-column: span 1;
+        grid-row: span 1;
+     }
+
+     main div.tratamientos-esteticos{
+        grid-column: span 1;
+        grid-row: span 1;
+     }
+
+    
+   /* estilos de promociones*/
+   main.promos{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,fr);
+}
+
+}
+
+/* mq de pantalla de escritorio*/
+@media screen and (min-width:1024px){
+    /*estilos index*/
+    main.contenedor{
+ 
+        display: grid;
+        grid-template-columns: 3fr;
+        grid-template-rows: repeat(6, 1fr);
+     }
+    
+    /* estilos sobre nosotros */
+    main.nosotros{
+        grid-template-columns: repeat(2, 1fr);
+       grid-template-rows: repeat(4, 1fr);
+       margin: 1rem;
+       gap: 3rem;
+       }
+       main div.titulo-sobrenosotros{
+           grid-column: span 2;
+       }
+       main div.profesional-odontologa{
+           grid-column: span 1;
+           grid-row: span 3;
+        
+       }
+       
+       main div.tecnica-estetica{
+           grid-column: span 1;
+           grid-row: span 3;
+      
+       }
+}
+
