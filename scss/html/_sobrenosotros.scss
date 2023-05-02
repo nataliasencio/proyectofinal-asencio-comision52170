@@ -1,0 +1,92 @@
+ /* estilos sobre nosotros */
+ 
+ main{
+      .nosotros{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin: 1rem;
+    }
+     .titulo-sobrenosotros{
+       grid-column: span 1;
+   }
+   .profesional-odontologa{
+       grid-column: span 1;
+       grid-row: span 1;
+   }
+    .tecnica-estetica{
+       grid-column: span 1;
+       grid-row: span 1;
+   }
+ }
+
+
+/* mq de tablets 600px para arriba */
+@media  screen and (min-width:600px){
+    
+    
+    /* estilos sobre nosotros */
+    main{
+           .nosotros{
+        grid-template-columns: repeat(2, 1fr);
+       grid-template-rows: repeat(3, 1fr);
+       margin: 1rem;
+       justify-items: center;
+       align-items: center;
+       text-align: center;
+       gap: 1rem;
+       } 
+        .titulo-sobrenosotros{
+           grid-column: span 2;
+       }
+      .profesional-odontologa{
+           grid-column: span 1;
+           grid-row: span 2;
+       }
+       .tecnica-estetica{
+           grid-column: span 1;
+           grid-row: span 2;
+       }
+       
+    }
+     }
+
+    /* mq de pantalla de escritorio*/
+@media screen and (min-width:1024px){
+  
+    
+    /* estilos sobre nosotros */
+    main{
+       .nosotros{
+        grid-template-columns: repeat(2, 1fr);
+       grid-template-rows: repeat(4, 1fr);
+       margin: 1rem;
+       gap: 3rem;
+    }
+   .titulo-sobrenosotros{
+           grid-column: span 2;
+       }
+        .profesional-odontologa{
+           grid-column: span 1;
+           grid-row: span 3;
+             }
+         .tecnica-estetica{
+           grid-column: span 1;
+           grid-row: span 3;
+            }
+     }
+}
+
+
+ 
+    
+   
+  
+   
+ 
+   
+  

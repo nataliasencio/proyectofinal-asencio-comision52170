@@ -1,0 +1,44 @@
+/* estilos tratamientos */
+main{
+    .tratamientos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+}
+
+/* mq de tablets 600px para arriba */
+@media  screen and (min-width:600px){
+    
+    main{
+        .tratamientos{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        margin: 5rem;
+        
+    }
+    .titulo-tratamientos{
+
+    grid-column: span 2;
+    grid-row: span 1;
+ }
+
+ .tratamientos-odontologicos{
+    grid-column: span 2;
+    grid-row: span 1;
+ }
+.tratamientos-esteticos{
+    grid-column: span 2;
+    grid-row: span 1;
+ }
+}
+
+ }

@@ -1,0 +1,36 @@
+/* estilo de html contacto */
+main{
+  .form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+
+  
+}  
+
+.form-contacto{
+    grid-column: span 1;
+    grid-row: span 1;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.map{
+ grid-column: span 1;
+ grid-row: span 1;
+ justify-items: center;
+ align-items: center;
+
+}
+
+}
+
+
+
+
+
+
+

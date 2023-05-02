@@ -1,0 +1,50 @@
+/* estilos del index */
+
+main{
+    .contenedor{
+    background-image: url(../img/img-uno.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 1rem;
+    }
+ .contenedor-dos{
+    
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  text-align: center;
+  justify-items: center;
+  margin: 1rem;
+    }
+
+}
+
+
+/* mq de tablets 600px para arriba */
+@media  screen and (min-width:600px){
+    /* estilos del index */
+    main{
+        .contenedor{
+ 
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+     }
+    }
+    
+}
+
+ /* mq de pantalla de escritorio*/
+@media screen and (min-width:1024px){
+    /*estilos index*/
+    main{
+        .contenedor{
+ 
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+     }
+    }
+    }
