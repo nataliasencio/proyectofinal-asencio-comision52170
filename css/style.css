@@ -40,6 +40,10 @@ main .contenedor-dos {
   justify-items: center;
   margin: 1rem; }
 
+main p.parrafo-home {
+  font-size: 30px;
+  padding: 100px; }
+
 /* mq de tablets 600px para arriba */
 @media screen and (min-width: 600px) {
   /* estilos del index */
@@ -115,32 +119,53 @@ main .tecnica-estetica {
     grid-row: span 3; } }
 
 /* estilos tratamientos */
-main .tratamientos {
+main div.tratamientos {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
   text-align: center;
   gap: 1rem;
   margin: 1rem; }
 
+main div.titulo-tratamientos {
+  grid-row: span 1;
+  grid-column: span 2; }
+
+main div.tratamientos-odontologicos {
+  grid-row: span 1;
+  grid-column: span 2; }
+  main div.tratamientos-odontologicos ul li {
+    list-style: none; }
+
+main div.odontologicos {
+  grid-row: span 1;
+  grid-column: span 2; }
+
+main div.tratamientos-esteticos {
+  grid-column: span 2;
+  grid-row: span 1; }
+
 /* mq de tablets 600px para arriba */
 @media screen and (min-width: 600px) {
   main .tratamientos {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
     text-align: center;
     margin: 5rem; }
-  main .titulo-tratamientos {
+  main div.titulo-tratamientos {
     grid-column: span 2;
     grid-row: span 1; }
-  main .tratamientos-odontologicos {
+  main div.tratamientos-odontologicos {
     grid-column: span 2;
     grid-row: span 1; }
-  main .tratamientos-esteticos {
+  main div.tratamientos-esteticos {
+    grid-column: span 2;
+    grid-row: span 1; }
+  main div.odontologicos {
     grid-column: span 2;
     grid-row: span 1; } }
 
