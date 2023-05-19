@@ -1,12 +1,15 @@
+//import mixin
+@import "../utilidades/mixin";
+
 /* estilos de html promociones */
+
 main
 {
    .promos{
-    display: grid;
+    @include grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    justify-items: center;
-    align-items: center;
+
     gap: 1rem;
     margin: 2rem;
    

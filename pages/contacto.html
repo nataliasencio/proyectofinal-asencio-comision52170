@@ -1,118 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- etiqueta meta description-->
+    <meta name:"contacto" content:"informacion para que los clientes puedan contactar por el servicio requerido">
+    <!-- link css bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-           <!-- link css bootstrap-->
-           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-     
     <!-- link para mi css -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css" />
 
-    <title> Contacto - Consultorio Odontologico y Estetica NBC </title>
-</head>
+    <title>Contacto - Consultorio Odontologico y Estetica NBC</title>
+  </head>
 
-<body>
-
+  <body>
     <header>
-
-      
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="../img/logo-dent.png" alt="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="../img/logo-dent.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a
+                class="nav-link active fondo-menu"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+              <a class="nav-link fondo-menu" href="./sobrenosotros.html">
+                Sobre Nosotros
               </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active fondo-menu" aria-current="page" href="../index.html">Home</a>
-                  <a class="nav-link fondo-menu" href="./sobrenosotros.html"> Sobre Nosotros </a>
-                  <a class="nav-link fondo-menu" href="./tratamientos.html"> Tratamientos </a>
-                  <a class="nav-link fondo-menu" href="./promociones.html"> Promociones </a>
-                  <a class="nav-link fondo-menu" href="./contacto.html"> Contacto </a>
-                </div>
-              </div>
+              <a class="nav-link fondo-menu" href="./tratamientos.html">
+                Tratamientos
+              </a>
+              <a class="nav-link fondo-menu" href="./promociones.html">
+                Promociones
+              </a>
+              <a class="nav-link fondo-menu" href="./contacto.html">
+                Contacto
+              </a>
             </div>
-          </nav>
-
-
+          </div>
+        </div>
+      </nav>
     </header>
-    
-    <h1> Contactanos </h1>
+
+    <h1>Contàctanos</h1>
 
     <main>
-        <div class="form">
-            <div class="form-contacto">
-                <h2> Formulario de Contacto </h2>
+      <div class="form">
+        <div class="form-contacto">
+          <h2>Formulario de Contacto</h2>
 
-        <!-- formulario de contacto -->
+          <!-- formulario de contacto -->
 
-        <form>
+          <form>
             <fieldset>
-                <legend> Dejanos tu consulta </legend>
-                <div>
-                    <label for="nombres">
-                        Nombre y Apellido
-                    </label>
-                    <input type="text" name="nombre y apellido" id="nombres">
-                </div>
-                <div>
-                    <label for="emails">
-                        Email
-                    </label>
-                    <input type="email" name="correo" id="emails">
-                </div>
-                <div>
-                    <label for="consultas">
-                        Mensaje
-                    </label>
-                    <input type="text" name="consulta" id="consultas">
-                </div>
-                <div>
-                    <input type="submit">
-                    <input type="reset">
-                </div>
+              <legend>Dejanos tu consulta</legend>
+              <div>
+                <label for="nombres"> Nombre y Apellido </label>
+                <input type="text" name="nombre y apellido" id="nombres" />
+              </div>
+              <div>
+                <label for="emails"> Email </label>
+                <input type="email" name="correo" id="emails" />
+              </div>
+              <div>
+                <label for="consultas"> Mensaje </label>
+                <input type="text" name="consulta" id="consultas" />
+              </div>
+              <div>
+                <input type="submit" />
+                <input type="reset" />
+              </div>
             </fieldset>
-        </form>
-            </div>
-            
-    <div class="map">
-        <div>
-            <h2> Nuestra sede en Joaquin.V.Gonzalez</h2>
-        </div>
-        <div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.6119033399414!2d-64.12729792523201!3d-25.114995520501434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941742c20cc36bff%3A0xdd4bd2f7ea7baa27!2sCalle%20Sargento%20Cabral%20%26%20Lavalle%2C%20Joaquin%20V.%20Gonz%C3%A1lez%2C%20Salta!5e0!3m2!1ses-419!2sar!4v1681689601022!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
-        </div>
-       
-
-    
-    </div>
-       
+          </form>
         </div>
 
-        
-
+        <div class="map">
+          <div>
+            <h2>Nuestra sede en Joaquin.V.Gonzalez</h2>
+          </div>
+          <div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.6119033399414!2d-64.12729792523201!3d-25.114995520501434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941742c20cc36bff%3A0xdd4bd2f7ea7baa27!2sCalle%20Sargento%20Cabral%20%26%20Lavalle%2C%20Joaquin%20V.%20Gonz%C3%A1lez%2C%20Salta!5e0!3m2!1ses-419!2sar!4v1681689601022!5m2!1ses-419!2sar"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer>
-        <!--derechos de autor-->
-        <h2> Todos los derechos reservados </h2>
+      <!--derechos de autor-->
+      <h2>Todos los derechos reservados</h2>
       <!-- logo para redes sociales -->
-      <div >
-          <img src="../img/logo-instagram.jpg" alt="logo de instagram">
-          <img src="../img/facebook.png" alt="logo de facebook">
-          <img src="../img/logo-whatsapp.png" alt="logo de whatsapp">
+      <div>
+        <img src="../img/logo-instagram.jpg" alt="logo de instagram" />
+        <img src="../img/facebook.png" alt="logo de facebook" />
+        <img src="../img/logo-whatsapp.png" alt="logo de whatsapp" />
       </div>
-
- 
-  </footer>
-  <!-- script bootstrap-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-</body>
-
+    </footer>
+    <!-- script bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

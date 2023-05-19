@@ -1,13 +1,14 @@
+//import mixin
+@import "../utilidades/mixin";
+
+
 /* estilo de html contacto */
 main{
   .form {
-  display: grid;
+  @include grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
-  justify-items: center;
-  align-items: center;
-
-  
+ 
 }  
 
 .form-contacto{
